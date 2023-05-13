@@ -71,14 +71,21 @@ font-family: 'Roboto', sans-serif; */
 .padding_bottom48px {
   padding-bottom: 48px;
 }
-.padding_top45px{
+.padding_top45px {
   padding-top: 45px;
 }
-.padding_bottom45px{
+.padding_bottom45px {
   padding-bottom: 45px;
 }
 .z_index {
-  z-index: 1;
+  z-index: 999;
+}
+.nav_position {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  background-color: #1371ff;
+  width: 100%;
 }
 .logo {
   font-family: "Poppins";
@@ -148,7 +155,7 @@ font-family: 'Roboto', sans-serif; */
     position: fixed;
     flex-direction: column;
     top: 0;
-    left: -100%;  
+    left: -100%;
     pointer-events: none;
     width: 100%;
     height: 100%;
@@ -507,9 +514,8 @@ h3 {
 .Footer_Li {
   display: flex;
   justify-content: space-between;
-  
 }
-.a_text4{
+.a_text4 {
   display: block;
   padding-bottom: 12px;
   font-family: "Roboto";
@@ -542,63 +548,60 @@ h4 {
   padding-top: 30px;
 }
 
-
-@media (max-width:992px) {
-  .col_lg_12_2{
+@media (max-width: 992px) {
+  .col_lg_12_2 {
     width: 100%;
     padding-left: 12px;
     padding-right: 12px;
   }
 }
-@media (max-width:768px){
-    .col_lg_12_2{
+@media (max-width: 768px) {
+  .col_lg_12_2 {
     width: 100%;
     padding-left: 12px;
     padding-right: 12px;
   }
-  .line{
+  .line {
     width: 130px;
   }
 }
 
-@media (max-width:576px){
-  .col_md_6{
+@media (max-width: 576px) {
+  .col_md_6 {
     width: 50%;
     padding-right: 12px;
     padding-left: 12px;
   }
 
-  .logo2{
+  .logo2 {
     padding-bottom: 10px;
   }
-  .para5{
+  .para5 {
     padding-top: 10px;
-  padding-bottom: 20px;
+    padding-bottom: 20px;
   }
-  .a_text4{
+  .a_text4 {
     padding-bottom: 6px;
   }
-  h4{
-    padding-bottom:10px ;
-  
-  }
-  .padding_bottom45px{
+  h4 {
     padding-bottom: 10px;
   }
-  .padding_top45px{
+  .padding_bottom45px {
+    padding-bottom: 10px;
+  }
+  .padding_top45px {
     padding-top: 10px;
   }
   .padding_bottom48px {
     padding-bottom: 20px;
   }
-  .para6{
+  .para6 {
     padding-top: 0px;
   }
-  .para4{
+  .para4 {
     padding-bottom: 10px;
   }
-  .line{
+  .line {
     width: 90px;
   }
 }
-
