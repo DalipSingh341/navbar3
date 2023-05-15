@@ -19,7 +19,9 @@ font-family: 'Roboto', sans-serif; */
   padding-left: 12px;
   padding-right: 12px;
 }
-
+.section_grow{
+  flex-grow: 1;
+}
 .row {
   display: flex;
   flex-direction: row;
@@ -391,6 +393,7 @@ h3 {
 }
 .relative {
   position: relative;
+  
 }
 
 .w_100_2 {
